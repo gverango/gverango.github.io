@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Distribute items evenly */
-  align-items: flex-start; /* Align content to the left */
+  align-items: flex-start;
   border-right: 2px solid #ddd;
   height: 100vh; /* Full height */
   box-sizing: border-box;
@@ -25,34 +25,39 @@ body {
 
 .sidebar h1,
 .sidebar h2,
-.sidebar p,
-.sidebar nav ul,
-.sidebar .profile-section {
-  margin: 0;
+.sidebar p {
+  margin: 0 0 1rem 0;
 }
 
 .sidebar nav ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-  margin-bottom: 2rem; /* Add space below navigation */
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0 0 2rem 0; /* Add space below navigation */
 }
 
 .sidebar nav ul li {
   margin: 0.5rem 0;
 }
 
+.sidebar nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
 .sidebar .profile-section {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center-align the image and text */
-  gap: 0.5rem; /* Add spacing between elements */
+  align-items: center;
+  gap: 0.5rem; /* Space between elements */
 }
 
-.profile-section img {
+.sideImage {
   width: 120px;
   height: 120px;
   border-radius: 20px;
   border: 2px solid #000;
+  object-fit: cover;
 }
 
 .caption {
