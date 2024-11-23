@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: space-between; /* Distribute items evenly */
     align-items: flex-start; /* Align content to the left */
-    border-right: 2px solid #ddd;
+    box-shadow: #666;
     height: 100vh; /* Full height */
     box-sizing: border-box;
     position: sticky; /* Stick the sidebar in place */
