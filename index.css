@@ -1,8 +1,8 @@
 /* too lazy to rename but essentially,
 --base-color: side bar background color
 --base-variant: main content text
---text-color: side bar text
---primary-color: h2s and captions
+--text-color: side bar text and icons
+--primary-color: idk yet
 --accent-color: main content background color
 */
 :root {

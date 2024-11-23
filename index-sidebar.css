@@ -21,7 +21,7 @@
   
   .sidebar h2 {
     font-size: 1rem;
-    color: var(--primary-color); /* Subtle gray for the caption */
+    color: var(--base-variant);
     font-style: italic; /* Italicize text */
     margin: 0; /* Remove extra margins */
   }
@@ -118,9 +118,13 @@
     width: 28px; /* Icon size */
     height: 28px;
     transition: transform 0.2s; /* Smooth hover effect */
-    color: var(--text-color);
+    filter: invert(0); /* Default (black icons) */
   }
-  
+    
+    /* Dark mode styles for the icons */
+    body.darkmode .social-links a img {
+      filter: invert(1); /* Invert to white */
+    }
   .social-links a img:hover {
     transform: scale(1.1); /* Slight zoom on hover */
   }
