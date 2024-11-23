@@ -30,7 +30,7 @@ body {
 }
 
 .sidebar h2 {
-  font-size: 4rem;
+  font-size: 1rem;
   color: #666; /* Subtle gray for the caption */
   font-style: italic; /* Italicize text */
   margin: 0; /* Remove extra margins */
