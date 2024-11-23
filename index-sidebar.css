@@ -64,19 +64,18 @@
   }
   
   .sidebar nav ul li a {
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Emphasize text */
-    color: #000; /* Default color */
-    display: inline-block; /* Align links properly */
-    width: 100%; /* Make the anchor span the list item width */
+    text-decoration: none; /* Remove underline by default */
+    font-weight: bold;
+    color: #000;
+    display: inline-block;
+    width: 100%;
+    transition: color 0.3s ease; /* Smooth color transition */
   }
   
-  .sidebar nav ul li:hover {
-    color:purple;
-  }
-  
-  .sidebar nav ul li a:active {
-    font-style:underline; /* Change text color on click */
+  .sidebar nav ul li a:hover,
+  .sidebar nav ul li a.active {
+    text-decoration: underline; /* Underline on hover or when active */
+    color: purple; /* Change text color to purple */
   }
   
   
