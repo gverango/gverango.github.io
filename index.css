@@ -24,11 +24,14 @@ body {
 }
 
 .sidebar h2 {
-  font-size: 1rem;
-  color: #666; /* Subtle gray for the caption */
-  font-style: italic; /* Italicize text */
-  margin: 0; /* Remove extra margins */
+  font-size: 1rem; /* Explicitly set the font size */
+  font-weight: normal; /* Ensure it is not bold */
+  color: #666; /* Subtle gray for consistent styling */
+  font-style: italic; /* Italicize the text */
+  margin: 0; /* Remove any additional margins */
+  line-height: 1.5; /* Adjust for better spacing */
 }
+
 .sidebar h1,
 .sidebar h2,
 .sidebar p {
