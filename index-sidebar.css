@@ -71,11 +71,11 @@
   }
   
   .sidebar nav ul li:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+    color:purple;
   }
   
   .sidebar nav ul li a:active {
-    color: purple; /* Change text color on click */
+    font-style:underline; /* Change text color on click */
   }
   
   
