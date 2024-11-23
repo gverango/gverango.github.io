@@ -1,16 +1,23 @@
+/* too lazy to rename but essentially,
+--base-color: side bar background color
+--base-variant: main content text
+--text-color: side bar text
+--primary-color: h2s and captions
+--accent-color: main content background color
+*/
 :root {
   --base-color: white;
-  --base-variant: #e8e9ed;
+  --base-variant: #003967; 
   --text-color: rgb(29, 29, 29);
-  --primary-color: #3a435d;
-  --accent-color: #6fbeff;
+  --primary-color: #4d5a80;
+  --accent-color: #7bc1fb;
 }
 
 .darkmode {
   --base-color: rgb(25, 25, 25);
-  --base-variant: #464646;
+  --base-variant: #c9bfff;
   --text-color: rgb(255, 255, 255);
-  --primary-color: #3a435d;
+  --primary-color: #4d5a80;
   --accent-color: #0c0243;
 }
 

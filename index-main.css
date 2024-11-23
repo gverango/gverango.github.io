@@ -6,7 +6,8 @@
     align-items: center; /* Center content horizontally */
     padding: 2rem;
     overflow-y: auto; /* Enable vertical scrolling */
-    background-color: #91d1ec;
+    background-color: var(--accent-color);
+    color: var(--bae-variant);
     box-sizing: border-box;
     height: 100vh; /* Make it the full height of the viewport */
   }
