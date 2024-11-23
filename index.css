@@ -18,7 +18,7 @@
   --base-variant: #c9bfff;
   --text-color: rgb(255, 255, 255);
   --primary-color: #4d5a80;
-  --accent-color: #0c0243;
+  --accent-color: rgb(15, 15, 25);
 }
 
 html{
