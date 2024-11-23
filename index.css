@@ -13,27 +13,26 @@
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align content to the left */
-    text-align: left;        /* Align text to the left */
-    border-right: 2px solid #ddd; /* Add border */
+    align-items: flex-start; /* Align to the left */
+    text-align: left;        /* Left-align text */
+    border-right: 2px solid #ddd;
   }
   
   .sidebar h1 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    text-align: left;
+    line-height: 1.2; /* Adjust line spacing */
   }
   
   .sidebar h2 {
     font-size: 1rem;
     color: #888;
     margin-bottom: 1.5rem;
-    text-align: left;
   }
   
   .sidebar p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 1.5rem;
     line-height: 1.5;
   }
@@ -41,13 +40,12 @@
   .sidebar strong {
     color: #000;
   }
-  
-  .sidebar .bright{
-    color:#FFBC04;
+  .sidebar .bright {
+    color: #FFBC04;
   }
 
   .sidebar .adaptive {
-    color: #02F;
+    color: #007bff;
   }
   
   .sidebar .intuitive {
@@ -57,8 +55,8 @@
   /* Navigation Styles */
   .sidebar nav ul {
     list-style: disc;
-    padding-left: 1.5rem; /* Proper indentation for bullets */
-    margin: 0;
+    padding-left: 1.5rem;
+    margin: 0 0 1.5rem 0;
   }
   
   .sidebar nav ul li {
@@ -69,7 +67,7 @@
     text-decoration: none;
     color: #000;
     font-weight: bold;
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
   
   /* Profile Picture */
@@ -77,37 +75,34 @@
     margin-top: 1rem;
     width: 120px;
     height: 120px;
-    border-radius: 50%;
+    border-radius: 10%; /* Slightly rounded corners */
     border: 2px solid #000;
     object-fit: cover;
+    margin-bottom: 0.5rem; /* Adjust spacing below the image */
   }
   
   /* Caption */
   .caption {
-    margin-top: 1rem;
     font-size: 0.9rem;
     color: #666;
-    text-align: center; /* Center-align caption */
+    margin-bottom: 1rem; /* Adjust spacing below caption */
   }
   
   /* Social Links */
   .sidebar .social-links {
-    margin-top: 1rem;
     display: flex;
-    justify-content: flex-start; /* Align to the left */
-    gap: 1rem;
+    align-items: center; /* Align icons with text */
+    gap: 0.8rem; /* Add space between icons */
   }
   
   .sidebar .social-links a img {
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    filter: grayscale(100%);
-    transition: filter 0.3s;
+    width: 28px; /* Adjust icon size */
+    height: 28px;
+    transition: transform 0.2s; /* Smooth hover effect */
   }
   
   .sidebar .social-links a img:hover {
-    filter: none;
+    transform: scale(1.1); /* Slight zoom on hover */
   }
   
   /* Main Content */
