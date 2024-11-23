@@ -75,6 +75,7 @@ themeSwitch.addEventListener('click', () => {
         star.style.textShadow = '0 0 10px white';
   
         document.querySelector('.night-sky').appendChild(star);
+        console.log('Star created'); // Debugging log
       }
     }, 100);
   }  
