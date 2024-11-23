@@ -22,23 +22,26 @@ themeSwitch.addEventListener('click', () => {
         clearInterval(stopinterv);
       }
       for (let i = 0; i < 5; i++) {
-        const starCounts = document.createElement('i');
-        starCounts.className = 'fa-solid fa-asterisk';
-        const wh = Math.random() * 15 + 5; // Random size between 5px and 20px
-        const $x = Math.random() * 100; // Random horizontal position
-        const $y = Math.random() * 100; // Random vertical position
+        const star = document.createElement('i');
+        star.className = 'fa-solid fa-asterisk'; // FontAwesome star icon
+        const size = Math.random() * 15 + 5; // Random star size
+        const x = Math.random() * 100; // Random horizontal position
+        const y = Math.random() * 100; // Random vertical position
   
-        starCounts.style.fontSize = `${wh}px`;
-        starCounts.style.left = `${$x}vw`;
-        starCounts.style.top = `${$y}vh`;
+        // Apply styles dynamically
+        star.style.position = 'absolute';
+        star.style.fontSize = `${size}px`;
+        star.style.left = `${x}vw`;
+        star.style.top = `${y}vh`;
+        star.style.color = 'white';
+        star.style.textShadow = '0 0 10px white';
   
-        document.querySelector('.night-sky').appendChild(starCounts);
+        document.querySelector('.night-sky').appendChild(star);
       }
     }, 100);
   }  
 
   function clearTwinkling() {
     const stars = document.querySelectorAll('.night-sky i');
-    stars.forEach((star) => star.remove()); // Remove all stars from the DOM
-  }
-  
+    stars.forEach((star) => star.remove()); // Remove all stars
+  }  
