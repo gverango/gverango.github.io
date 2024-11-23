@@ -10,64 +10,65 @@
   .sidebar {
     flex: 1;
     padding: 2rem;
-    background-color: #ffffff;
+    background-color: #ffffff; /* White background */
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align to the left */
+    align-items: flex-start; /* Align content to the left */
     text-align: left;        /* Left-align text */
     border-right: 2px solid #ddd;
   }
   
   .sidebar h1 {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 700; /* Use bold font weight */
     margin-bottom: 0.5rem;
     line-height: 1.2; /* Adjust line spacing */
   }
   
   .sidebar h2 {
     font-size: 1rem;
-    color: #888;
+    color: #888; /* Subtle gray color for subheading */
     margin-bottom: 1.5rem;
   }
   
   .sidebar p {
     font-size: 1rem;
-    margin-bottom: 1.5rem;
     line-height: 1.5;
+    margin-bottom: 1.5rem;
   }
   
   .sidebar strong {
-    color: #000;
+    color: #000; /* Black color for emphasis */
   }
+  
   .sidebar .bright {
-    color: #FFBC04;
+    color: #FFBC04; /* Yellow for 'bright' */
   }
-
+  
   .sidebar .adaptive {
-    color: #007bff;
+    color: #007bff; /* Blue for 'adaptive' */
   }
   
   .sidebar .intuitive {
-    color: #e63946;
+    color: #e63946; /* Red for 'intuitive' */
   }
   
   /* Navigation Styles */
   .sidebar nav ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-    margin: 0 0 1.5rem 0;
+    list-style: disc; /* Use bullet points */
+    padding-left: 1.5rem; /* Add indentation for bullets */
+    margin: 0 0 1.5rem 0; /* Spacing below the list */
   }
   
   .sidebar nav ul li {
-    margin: 0.5rem 0;
+    margin: 0.5rem 0; /* Spacing between items */
   }
   
   .sidebar nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: #000; /* Black links */
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1rem; /* Adjust font size */
   }
   
   /* Profile Picture */
@@ -75,39 +76,34 @@
     margin-top: 1rem;
     width: 120px;
     height: 120px;
-    border-radius: 10%; /* Slightly rounded corners */
-    border: 2px solid #000;
-    object-fit: cover;
-    margin-bottom: 0.5rem; /* Adjust spacing below the image */
+    border-radius: 20px; /* Rounded corners */
+    border: 2px solid #000; /* Black border */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-bottom: 0.5rem; /* Spacing below the image */
   }
   
   /* Caption */
   .caption {
     font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 1rem; /* Adjust spacing below caption */
+    color: #666; /* Subtle gray for the caption */
+    margin-bottom: 1rem; /* Spacing below the caption */
+    text-align: center; /* Center-align the text */
   }
   
   /* Social Links */
   .sidebar .social-links {
     display: flex;
-    align-items: center; /* Align icons with text */
-    gap: 0.8rem; /* Add space between icons */
+    justify-content: flex-start; /* Align icons to the left */
+    gap: 1rem; /* Add space between icons */
   }
   
   .sidebar .social-links a img {
-    width: 28px; /* Adjust icon size */
+    width: 28px; /* Icon size */
     height: 28px;
     transition: transform 0.2s; /* Smooth hover effect */
   }
   
   .sidebar .social-links a img:hover {
     transform: scale(1.1); /* Slight zoom on hover */
-  }
-  
-  /* Main Content */
-  .main-content {
-    flex: 2;
-    background-color: #e5e5e5;
   }
   
