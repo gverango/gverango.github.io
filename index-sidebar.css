@@ -1,6 +1,6 @@
 .sidebar-container {
     display: flex;
-    min-height: 100vh;
+    min-height: 100vh; /* Full viewport height */
     background-color: #e5e5e5;
   }
   
@@ -11,10 +11,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Distribute items evenly */
-    align-items: flex-start;
+    align-items: flex-start; /* Align content to the left */
     border-right: 2px solid #ddd;
     height: 100vh; /* Full height */
     box-sizing: border-box;
+    position: sticky; /* Stick the sidebar in place */
+    top: 0; /* Ensure it starts from the top of the viewport */
+    overflow-y: auto; /* Enable scrolling within the sidebar if content overflows */
   }
   
   .sidebar h2 {
