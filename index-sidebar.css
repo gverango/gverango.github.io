@@ -77,7 +77,7 @@
   
   .sidebar nav ul li a.active {
     text-decoration: underline; /* Keep underline for active link */
-    color: purple; /* Change text color to purple */
+    color: var(--base-variant); /* Change text color to purple */
   }
   
   
@@ -118,6 +118,7 @@
     width: 28px; /* Icon size */
     height: 28px;
     transition: transform 0.2s; /* Smooth hover effect */
+    color: var(--accent-color);
   }
   
   .social-links a img:hover {
