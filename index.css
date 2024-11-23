@@ -3,7 +3,7 @@
     display: flex;
     min-height: 100vh;
     background-color: #e5e5e5; /* Light gray background */
-    font-family: Arial, sans-serif;
+    font-family: Inter;
   }
   
   /* Sidebar Styles */
@@ -42,12 +42,16 @@
     color: #000;
   }
   
+  .sidebar .bright{
+    color:#FFBC04;
+  }
+
   .sidebar .adaptive {
-    color: #007bff;
+    color: #02F;
   }
   
   .sidebar .intuitive {
-    color: #e63946;
+    color: #E1306C;
   }
   
   /* Navigation Styles */
