@@ -29,6 +29,13 @@ body {
   margin: 0 0 1rem 0;
 }
 
+.sidebar h2 {
+  font-size: 4rem;
+  color: #666; /* Subtle gray for the caption */
+  font-style: italic; /* Italicize text */
+  margin: 0; /* Remove extra margins */
+}
+
 .sidebar nav ul {
   list-style: none; /* Remove bullet points */
   padding: 0;
@@ -70,20 +77,20 @@ body {
 
 
             /*Stack child items vertically*/
-            .vbox {
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
+.vbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
           
-              /*Align children vetically*/
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
+  /*Align children vetically*/
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
           
-              -webkit-align-content: flex-start;
-              -ms-flex-line-pack: start;
-              align-content: flex-start;
-          }
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+}
 
 /* Social Links Styling */
 .social-links {
