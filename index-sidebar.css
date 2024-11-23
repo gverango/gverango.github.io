@@ -34,12 +34,10 @@
     align-items: center;
     position: fixed;
     top: 20px;
-    right 20px;
-    top: 20px;
-    right:20px;
+    left: 50px;
   }
   #theme-switch svg{
-    fill: var(--text-color);
+    fill: var(--base-color);
   }
   #theme-switch svg:last-child{
     display:none;
