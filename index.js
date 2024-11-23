@@ -12,6 +12,8 @@ navLinks.forEach(link => {
   });
 });
 
+
+
 // THEME SWITCH FUNCTIONALITY
 
 let darkmode = localStorage.getItem('darkmode')
