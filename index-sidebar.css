@@ -58,7 +58,8 @@
   .sidebar nav ul li {
     margin: 0.5rem 0; /* Spacing between list items */
     text-align: left; /* Align text to the left */
-    padding-left: 0.5rem; /* Add slight indentation */
+    padding-top:0;
+    /*padding-left: 0.5rem; /* Add slight indentation */
     transition: transform 0.2s ease, color 0.3s ease; /* Smooth hover and click transitions */
   }
   
