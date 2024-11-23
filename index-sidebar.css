@@ -52,16 +52,17 @@
     margin: 0.5rem 0;
     transition: transform 0.2s; /* Smooth hover effect */
   }
-  
+
   
   .sidebar nav ul li a {
     text-decoration: none;
     font-weight: bold;
     color: #000;
-    transform: scale(1.1); /* Slight zoom on hover */
   }
 
-  
+  .sidebar nav ul li a:hover{
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
   
 /* Profile Section Styling */
 .profile-section {
