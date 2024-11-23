@@ -8,240 +8,85 @@ body {
   display: flex;
   min-height: 100vh;
   background-color: #e5e5e5;
-  font-family: inherit; /* Ensure it uses the same font-family */
 }
 
 .sidebar {
-  flex: 1 1 33%; /* Take 1/3 of the width */
+  flex: 1 1 33%; /* Sidebar takes 1/3 of the width */
   padding: 2rem;
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Evenly distribute space between elements */
+  justify-content: space-between; /* Distribute items evenly */
   align-items: flex-start; /* Align content to the left */
-  text-align: left; /* Left-align text */
   border-right: 2px solid #ddd;
-  height: 100vh; /* Match sidebar height to screen height */
-  box-sizing: border-box; /* Include padding in the height */
+  height: 100vh; /* Full height */
+  box-sizing: border-box;
 }
 
-.main-content {
-  flex: 2 1 67%; /* Take 2/3 of the width */
-  background-color: #e5e5e5; /* Light grey background */
-  padding: 2rem;
-  overflow-y: auto; /* Enable vertical scrolling only */
+.sidebar h1,
+.sidebar h2,
+.sidebar p,
+.sidebar nav ul,
+.sidebar .profile-section {
+  margin: 0;
+}
+
+.sidebar nav ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem; /* Add space below navigation */
+}
+
+.sidebar nav ul li {
+  margin: 0.5rem 0;
+}
+
+.sidebar .profile-section {
   display: flex;
-  justify-content: center; /* Center align content horizontally */
-  align-items: center; /* Center align content vertically */
-  box-sizing: border-box; /* Include padding in the width */
+  flex-direction: column;
+  align-items: center; /* Center-align the image and text */
+  gap: 0.5rem; /* Add spacing between elements */
 }
 
-.main-content p {
-  max-width: 560px; /* Restrict the width of the paragraph */
-  margin: 0 auto; /* Center the paragraph horizontally */
-  text-align: center; /* Center align the text */
-  line-height: 1.6; /* Adjust line height for readability */
-  font-size: 1rem;
-  color: #333; /* Text color */
+.profile-section img {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  border: 2px solid #000;
 }
 
-  
-  .sidebar h1, .sidebar h2, .sidebar p {
-    margin: 0;
-  }
-  
-  
-  /* Scrollbar styling */
- 
-  .sidebar::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  .sidebar::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 4px;
-  }
-  
-  .sidebar::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-  }
-  
- 
-  .sidebar h1 {
-    font-size: 2rem;
-    font-weight: 700; /* Use bold font weight */
-    margin-bottom: 0.5rem;
-    line-height: 1.2; /* Adjust line spacing */
-  }
-  
-  .sidebar h2 {
-    font-size: 1rem;
-    color: #888; /* Subtle gray color for subheading */
-    margin-bottom: 1.5rem;
-    color: #000;
-    font-size: 15px;
-    font-style: italic;
-    font-weight: 600;
-    line-height: normal
-  }
-  
-  .sidebar p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
-  }
-  
-  .sidebar strong {
-    color: #000; /* Black color for emphasis */
-  }
-  
-  .sidebar .bright {
-    color: #FFBC04; /* Yellow for 'bright' */
-  }
-  
-  .sidebar .adaptive {
-    color: #007bff; /* Blue for 'adaptive' */
-  }
-  
-  .sidebar .intuitive {
-    color: #e63946; /* Red for 'intuitive' */
-  }
-  
-  /* Navigation Styles */
-  .sidebar nav ul {
-    list-style: disc; /* Use bullet points */
-    padding-left: 1.5rem; /* Add indentation for bullets */
-    margin: 0 0 1.5rem 0; /* Spacing below the list */
-  }
-  
-  .sidebar nav ul li {
-    margin: 0.5rem 0; /* Spacing between items */
-  }
-  
-  .sidebar nav ul li a {
-    text-decoration: none;
-    color: #000; /* Black links */
-    font-weight: bold;
-    font-size: 1rem; /* Adjust font size */
-  }
-  
-  /* Profile Picture */
-  .sideImage {
-    margin-top: 1rem;
-    width: 120px;
-    height: 120px;
-    border-radius: 20px; /* Rounded corners */
-    border: 2px solid #000; /* Black border */
-    object-fit: cover; /* Maintain aspect ratio */
-    margin-bottom: 0.5rem; /* Spacing below the image */
-  }
-  
-  /* Caption */
-  .caption {
-    font-size: 0.9rem;
-    color: #666; /* Subtle gray for the caption */
-    margin-bottom: 1rem; /* Spacing below the caption */
-    text-align: center; /* Center-align the text */
-  }
-  
-  /* Social Links Styling */
+.caption {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+
 .social-links {
-  display: flex; /* Flexbox for horizontal alignment */
-  justify-content: flex-start; /* Align to the left */
-  align-items: center; /* Center-align icons vertically */
-  gap: 1rem; /* Space between icons */
-  margin-top: 0.5rem; /* Adjust space above the icons */
-}
-
-.social-links a img {
-  width: 28px; /* Icon size */
-  height: 28px;
-  transition: transform 0.2s; /* Smooth hover effect */
-}
-
-.social-links a img:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
-}
-  /* Profile Section Styling */
-.profile-section {
-    display: flex; /* Flexbox to place items side-by-side */
-    align-items: center; /* Vertically center align image and text */
-    gap: 1rem; /* Space between image and text */
-    margin-bottom: 1.5rem; /* Add spacing below the profile section */
-  }
-  
-  .sideImage {
-    width: 100px; /* Set fixed width */
-    height: 100px; /* Set fixed height */
-    border-radius: 20px; /* Rounded corners */
-    border: 2px solid #000; /* Add border to image */
-    object-fit: cover; /* Maintain aspect ratio */
-  }
-  
-  .caption {
-    font-size: 1rem;
-    color: #666; /* Subtle gray for the caption */
-    font-style: italic; /* Add italics for style */
-    margin: 0; /* Remove default margin */
-  }
-  
-  /* Social Links Styling */
-  .social-links {
-    display: flex;
-    justify-content: center; /* Horizontally align icons */
-    gap: 1rem; /* Add spacing between icons */
-  }
-  
-  .social-links a img {
-    width: 28px; /* Icon size */
-    height: 28px;
-    transition: transform 0.2s; /* Smooth hover effect */
-  }
-  
-  .social-links a img:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
-  }
-  
-  /*Stack child items vertically*/
-  .vbox {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-
-    /*Align children vetically*/
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-
-    -webkit-align-content: flex-start;
-    -ms-flex-line-pack: start;
-    align-content: flex-start;
-} 
-
-/* Main Content Styles */
-.main-content {
-  flex: 2 1 67%; /* 2/3 of the screen width */
-  background-color: #e5e5e5; /* Light grey background */
-  padding: 2rem;
-  overflow-y: auto; /* Enable vertical scrolling only */
   display: flex;
-  justify-content: center; /* Center align content horizontally */
-  align-items: center; /* Center align content vertically */
-  box-sizing: border-box; /* Include padding in the width */
+  gap: 1rem;
 }
 
-/* Paragraph Container */
-.paragraph-container {
-  max-width: 560px; /* Limit paragraph width to 560px */
-  text-align: center; /* Center align text */
-  line-height: 1.6; /* Adjust line spacing for readability */
-  font-size: 1rem; /* Adjust font size */
-  color: #333; /* Dark grey text color */
+.social-links img {
+  width: 28px;
+  height: 28px;
 }
+
+/* Main Content Styling */
+.main-content {
+  flex: 2 1 67%; /* Main content takes 2/3 of the width */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  padding: 2rem;
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: #e5e5e5;
+  box-sizing: border-box;
+}
+
 .main-content p {
-  margin-bottom: 1.5rem;
-}
-
-.main-content strong {
-  color: #38333a;
+  max-width: 560px; /* Limit the paragraph width */
+  margin: 0 auto; /* Center paragraph horizontally */
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
 }
