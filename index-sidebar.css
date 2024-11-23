@@ -55,7 +55,20 @@
  /*   transition: color 0.3s ease; /* Smooth color transition  */
   }
   
-  .sidebar nav ul li:hover {
+
+  .sidebar nav ul li::before {
+    content: attr(data-hover);
+    color: purple;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 30%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .sidebar nav ul li:hover:before {
+    width:100%;
     transform: scale(1.1); /* Slight zoom on hover */
   }
   
