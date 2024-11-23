@@ -19,6 +19,10 @@
     overflow-y: auto; /* Enable scrolling within the sidebar if content overflows */
   }
   
+  .sidebar .header button {
+    background-color: var(--text-color);
+  }
+
   .sidebar h2 {
     font-size: 1rem;
     color: var(--base-variant);
