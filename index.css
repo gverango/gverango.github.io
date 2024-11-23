@@ -17,13 +17,19 @@ body {
     background-color: #ffffff; /* White background */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Evenly distribute space between elements */
+    justify-content: space-between; /* Evenly distribute the sections */
     align-items: flex-start; /* Align content to the left */
     text-align: left; /* Left-align text */
     border-right: 2px solid #ddd;
     height: 100vh; /* Match sidebar height to screen height */
     box-sizing: border-box; /* Include padding in the height */
-    overflow-y: auto; /* Allow scrolling if content overflows */
+  }
+  
+  .sidebar-content {
+    flex: 1; /* Allow the content section to take up space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute items evenly within the content area */
   }
   
   .sidebar h1, .sidebar h2, .sidebar p {
