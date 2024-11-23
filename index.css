@@ -45,11 +45,46 @@ body {
   color: #000;
 }
 
-.sidebar .profile-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem; /* Space between elements */
+/* Profile Section Styling */
+.profile-section {
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Center image and text vertically */
+  gap: 1rem; /* Space between the image and text */
+  margin-bottom: 1rem; /* Spacing below profile section */
+}
+
+.sideImage {
+  width: 100px; /* Set fixed width */
+  height: 100px; /* Set fixed height */
+  border-radius: 20px; /* Rounded corners */
+  border: 2px solid #000; /* Add border */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.caption {
+  font-size: 1rem;
+  color: #666; /* Subtle gray for the caption */
+  font-style: italic; /* Italicize text */
+  margin: 0; /* Remove extra margins */
+}
+
+/* Social Links Styling */
+.social-links {
+  display: flex; /* Flexbox for horizontal alignment */
+  justify-content: flex-start; /* Align to the left */
+  align-items: center; /* Center-align icons vertically */
+  gap: 1rem; /* Space between icons */
+  margin-top: 0.5rem; /* Adjust space above the icons */
+}
+
+.social-links a img {
+  width: 28px; /* Icon size */
+  height: 28px;
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.social-links a img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
 }
 
 .sideImage {
