@@ -54,27 +54,26 @@ themeSwitch.addEventListener('click', () => {
   }
 });
 
-// Start creating stars
 function startTwinkling() {
-  console.log('Start Twinkling Called'); // Debugging log
+  console.log('Start Twinkling Called');
   let timesRun = 0;
   const stopinterv = setInterval(() => {
     timesRun += 1;
     if (timesRun === 50) {
-      clearInterval(stopinterv); // Stop after 50 intervals
+      clearInterval(stopinterv);
     }
     for (let i = 0; i < 5; i++) {
       const star = document.createElement('i');
       star.className = 'fa-solid fa-asterisk'; // FontAwesome star icon
       const size = Math.random() * 15 + 5; // Random size
-      const x = Math.random() * 100; // Random horizontal position
-      const y = Math.random() * 100; // Random vertical position
+      const x = Math.random() * document.querySelector('.night-sky').offsetWidth; // Constrain to container
+      const y = Math.random() * document.querySelector('.night-sky').offsetHeight; // Constrain to container
 
       // Apply styles dynamically
       star.style.position = 'absolute';
       star.style.fontSize = `${size}px`;
-      star.style.left = `${x}vw`;
-      star.style.top = `${y}vh`;
+      star.style.left = `${x}px`; // Use px instead of vw
+      star.style.top = `${y}px`; // Use px instead of vh
       star.style.color = 'white';
       star.style.textShadow = '0 0 10px white';
 

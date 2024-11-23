@@ -47,14 +47,21 @@
     display: block; /* Show only in dark mode */
   }
 
+  .night-sky i {
+    position: absolute;
+    z-index: 1; /* Ensure stars are visible above the background */
+    text-shadow: 0px 0px 10px white;
+    animation: fade 1.5s linear infinite;
+  }  
+/*
   .night-sky i.fa-solid.fa-asterisk {
     z-index:0;
     position: absolute;
-    text-shadow: 0px 0px 10px white; /* Glow effect */
-    color: white; /* Star color */
-    animation: fade 1.5s linear infinite; /* Twinkling animation */
+    text-shadow: 0px 0px 10px white; /* Glow effect 
+    color: white; /* Star color 
+    animation: fade 1.5s linear infinite; /* Twinkling animation 
   }
-  
+*/
   @keyframes fade {
     0%, 100% {
       opacity: 0.1;
