@@ -104,4 +104,115 @@
     flex: 2;
     background-color: #e5e5e5; /* Match main content background */
   }
+  /* General Styles */
+.app-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #e5e5e5; /* Light gray background for the app */
+    color: rgb(42, 42, 42);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    flex: 1;
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align content */
+    text-align: center;  /* Center-align text */
+    border-right: 2px solid #ddd; /* Divider between sidebar and main content */
+  }
+  
+  .sidebar h1 {
+    font-size: 2rem; /* Adjust font size */
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Add spacing below */
+  }
+  
+  .sidebar h2 {
+    font-size: 1rem;
+    color: #888; /* Lighter gray for secondary text */
+    margin-bottom: 1.5rem;
+  }
+  
+  .sidebar p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5; /* Improve text readability */
+  }
+  
+  .sidebar strong {
+    color: #000;
+  }
+  
+  .sidebar .adaptive {
+    color: #007bff; /* Bright blue for 'adaptive' */
+  }
+  
+  .sidebar .intuitive {
+    color: #e63946; /* Red for 'intuitive' */
+  }
+  
+  /* Navigation Styles */
+  .sidebar nav ul {
+    list-style: disc; /* Use bullet points */
+    padding-left: 1.5rem; /* Add indentation */
+    text-align: left; /* Align bullets to the left */
+  }
+  
+  .sidebar nav ul li {
+    margin: 0.5rem 0;
+  }
+  
+  .sidebar nav ul li a {
+    text-decoration: none;
+    color: #000; /* Black for links */
+    font-weight: bold;
+    font-size: 0.95rem; /* Slightly larger font */
+  }
+  
+  /* Profile Picture */
+  .sideImage {
+    margin-top: 1rem;
+    width: 120px; /* Reduce size to match reference */
+    height: 120px;
+    border-radius: 50%; /* Make it circular */
+    border: 2px solid #000;
+    object-fit: cover; /* Ensure proper fit */
+  }
+  
+  /* Caption */
+  .caption {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666; /* Subtle gray for the caption */
+  }
+  
+  /* Social Links */
+  .sidebar .social-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center; /* Center align icons */
+    gap: 1rem; /* Add spacing between icons */
+  }
+  
+  .sidebar .social-links a img {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    filter: grayscale(100%); /* Optional: Apply grayscale filter */
+    transition: filter 0.3s; /* Smooth hover effect */
+  }
+  
+  .sidebar .social-links a img:hover {
+    filter: none; /* Remove grayscale on hover */
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 2;
+    background-color: #e5e5e5; /* Match main content background */
+  }
   
