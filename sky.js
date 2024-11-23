@@ -1,15 +1,15 @@
 const themeSwitch = document.getElementById('theme-switch');
 let isDarkMode = false;
 
+// Add a click event listener to the theme switch button
 themeSwitch.addEventListener('click', () => {
-  document.body.classList.toggle('darkmode');
-  isDarkMode = !isDarkMode;
+  document.body.classList.toggle('darkmode'); // Toggle the dark mode class on the body
+  isDarkMode = document.body.classList.contains('darkmode');
 
-  // Start or stop the star animation based on dark mode state
   if (isDarkMode) {
-    startTwinkling();
+    startTwinkling(); // Start creating stars
   } else {
-    clearTwinkling();
+    clearTwinkling(); // Remove stars when leaving dark mode
   }
 });
 
@@ -23,9 +23,9 @@ function startTwinkling() {
     for (let i = 0; i < 5; i++) {
       const starCounts = document.createElement('i');
       starCounts.className = 'fa-solid fa-asterisk';
-      const wh = Math.floor(Math.random(1, 10) * 15);
-      const $x = Math.floor(Math.random(0, 4) * 100);
-      const $y = Math.floor(Math.random(0, 4) * 100);
+      const wh = Math.floor(Math.random() * 15) + 5; // Star size
+      const $x = Math.floor(Math.random() * 100); // Random horizontal position
+      const $y = Math.floor(Math.random() * 100); // Random vertical position
 
       starCounts.style.position = 'absolute';
       starCounts.style.fontSize = wh + 'px';
@@ -40,6 +40,5 @@ function startTwinkling() {
 
 function clearTwinkling() {
   const stars = document.querySelectorAll('.night-sky i');
-  stars.forEach((star) => star.remove());
+  stars.forEach((star) => star.remove()); // Remove all stars
 }
-

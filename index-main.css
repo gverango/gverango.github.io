@@ -32,8 +32,9 @@
   }
   
   body:not(.darkmode) .night-sky {
-    display: none; /* Hide the night sky in light mode */
+    display: none; /* Hide the night sky when not in dark mode */
   }
+  
   body.darkmode .night-sky {
     display: block; /* Show the night sky in dark mode */
     position: absolute;
@@ -41,9 +42,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Ensure stars are behind all content */
+    z-index: -1; /* Ensure it stays behind all content */
     overflow: hidden;
+    background: radial-gradient(circle, rgba(3,3,48,1) 0%, rgba(0,0,0,1) 100%);
   }
+  
   .night-sky i.fa-solid.fa-asterisk {
     position: absolute;
     z-index: -1; /* Ensure stars stay behind all other elements */
