@@ -14,7 +14,7 @@
 }
 
 .darkmode {
-  --base-color: rgb(25, 25, 25);
+  --base-color: black;
   --base-variant: #c9bfff;
   --text-color: rgb(255, 255, 255);
   --primary-color: #4d5a80;
