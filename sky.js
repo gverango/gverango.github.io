@@ -1,18 +1,18 @@
-const themeSwitch = document.getElementById('theme-switch');
 
 // Check and toggle dark mode
 themeSwitch.addEventListener('click', () => {
-    const isDarkMode = document.body.classList.toggle('darkmode'); // Toggle dark mode
-    const nightSky = document.querySelector('.night-sky');
-  
-    if (isDarkMode) {
-      nightSky.style.display = 'block'; // Show the night sky
-      startTwinkling(); // Start creating stars
-    } else {
-      nightSky.style.display = 'none'; // Hide the night sky
-      clearTwinkling(); // Remove stars
-    }
-  });  
+  const isDarkMode = document.body.classList.toggle('darkmode'); // Toggle dark mode
+  const nightSky = document.querySelector('.night-sky');
+
+  if (isDarkMode) {
+    nightSky.style.display = 'block'; // Show the night sky explicitly
+    startTwinkling(); // Start creating stars
+  } else {
+    nightSky.style.display = 'none'; // Hide the night sky explicitly
+    clearTwinkling(); // Remove stars
+  }
+});
+
 
   function startTwinkling() {
     let timesRun = 0;
