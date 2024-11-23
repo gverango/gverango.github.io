@@ -23,6 +23,12 @@ body {
   box-sizing: border-box;
 }
 
+.sidebar h2 {
+  font-size: 1rem;
+  color: #666; /* Subtle gray for the caption */
+  font-style: italic; /* Italicize text */
+  margin: 0; /* Remove extra margins */
+}
 .sidebar h1,
 .sidebar h2,
 .sidebar p {
@@ -45,11 +51,63 @@ body {
   color: #000;
 }
 
-.sidebar .profile-section {
+/* Profile Section Styling */
+.profile-section {
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Center image and text vertically */
+  gap: 1rem; /* Space between the image and text */
+  margin-bottom: 1rem; /* Spacing below profile section */
+}
+
+.sideImage {
+  width: 100px; /* Set fixed width */
+  height: 100px; /* Set fixed height */
+  border-radius: 50px; /* Rounded corners */
+  border: 2px solid #000; /* Add border */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.caption {
+  font-size: 1rem;
+  color: #666; /* Subtle gray for the caption */
+  font-style: italic; /* Italicize text */
+  margin: 0; /* Remove extra margins */
+}
+
+
+            /*Stack child items vertically*/
+.vbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+          
+  /*Align children vetically*/
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
-  align-items: center;
-  gap: 0.5rem; /* Space between elements */
+          
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+}
+
+/* Social Links Styling */
+.social-links {
+  display: flex; /* Flexbox for horizontal alignment */
+  justify-content: flex-start; /* Align to the left */
+  align-items: center; /* Center-align icons vertically */
+  gap: 1rem; /* Space between icons */
+  margin-top: 0.5rem; /* Adjust space above the icons */
+}
+
+.social-links a img {
+  width: 28px; /* Icon size */
+  height: 28px;
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.social-links a img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
 }
 
 .sideImage {
