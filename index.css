@@ -63,7 +63,7 @@ body {
 .sideImage {
   width: 100px; /* Set fixed width */
   height: 100px; /* Set fixed height */
-  border-radius: 20px; /* Rounded corners */
+  border-radius: 50px; /* Rounded corners */
   border: 2px solid #000; /* Add border */
   object-fit: cover; /* Maintain aspect ratio */
 }
