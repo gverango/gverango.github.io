@@ -17,7 +17,6 @@ navLinks.forEach(link => {
 // THEME SWITCH FUNCTIONALITY
 
 let darkmode = localStorage.getItem('darkmode')
-const themeSwitch = document.getElementById('theme-switch')
 
 const enableDarkmode = () => {
   document.body.classList.add('darkmode')
