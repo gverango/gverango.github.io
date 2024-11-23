@@ -1,19 +1,21 @@
-/* Main Content Styling */
 .main-content {
     flex: 2 1 67%; /* Main content takes 2/3 of the width */
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Allow vertical stacking of paragraphs */
+    justify-content: flex-start; /* Start content at the top */
+    align-items: center; /* Center content horizontally */
     padding: 2rem;
     overflow-y: auto; /* Enable vertical scrolling */
     background-color: #e5e5e5;
     box-sizing: border-box;
+    height: 100vh; /* Make it the full height of the viewport */
   }
   
   .main-content p {
     max-width: 560px; /* Limit the paragraph width */
-    margin: 0 auto; /* Center paragraph horizontally */
+    margin: 1rem auto; /* Add space between paragraphs and center them */
     text-align: center;
     font-size: 1rem;
     line-height: 1.6;
   }
+  
