@@ -59,6 +59,11 @@
   
   .sidebar nav ul li {
     margin: 0.5rem 0;
+    
+  }
+  .sidebar nav ul li:hover {
+    background-color: yellow;
+    font-size: 18px;
   }
   
   .sidebar nav ul li a {
