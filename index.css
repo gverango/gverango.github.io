@@ -2,8 +2,7 @@
 .app-container {
     display: flex;
     min-height: 100vh;
-    background-color: #e5e5e5; /* Light gray background for the app */
-    color: rgb(42, 42, 42);
+    background-color: #e5e5e5; /* Light gray background */
     font-family: Arial, sans-serif;
   }
   
@@ -11,31 +10,32 @@
   .sidebar {
     flex: 1;
     padding: 2rem;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center-align content */
-    text-align: center;  /* Center-align text */
-    border-right: 2px solid #ddd; /* Divider between sidebar and main content */
-    border-radius: 0; /* Remove unnecessary border-radius */
+    align-items: flex-start; /* Align content to the left */
+    text-align: left;        /* Align text to the left */
+    border-right: 2px solid #ddd; /* Add border */
   }
   
   .sidebar h1 {
-    font-size: 1.8rem; /* Adjust font size */
+    font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 0.5rem; /* Add spacing below */
+    margin-bottom: 0.5rem;
+    text-align: left;
   }
   
   .sidebar h2 {
     font-size: 1rem;
-    color: #888; /* Lighter gray for secondary text */
+    color: #888;
     margin-bottom: 1.5rem;
+    text-align: left;
   }
   
   .sidebar p {
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
-    line-height: 1.5; /* Improve text readability */
+    line-height: 1.5;
   }
   
   .sidebar strong {
@@ -43,181 +43,72 @@
   }
   
   .sidebar .adaptive {
-    color: #007bff; /* Bright blue for 'adaptive' */
+    color: #007bff;
   }
   
   .sidebar .intuitive {
-    color: #e63946; /* Red for 'intuitive' */
+    color: #e63946;
   }
   
   /* Navigation Styles */
   .sidebar nav ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0;
+    list-style: disc;
+    padding-left: 1.5rem; /* Proper indentation for bullets */
     margin: 0;
   }
   
   .sidebar nav ul li {
     margin: 0.5rem 0;
-    
-  }
-  .sidebar nav ul li:hover {
-    background-color: yellow;
-    font-size: 18px;
   }
   
   .sidebar nav ul li a {
     text-decoration: none;
-    color: #000; /* Black for links */
-    font-weight: bold;
-    font-size: 0.95rem; /* Slightly larger font */
-  }
-  
-  /* Profile Picture */
-  .sideImage {
-    margin-top: 1rem;
-    width: 150px; /* Set fixed size for consistency */
-    height: 150px;
-    border-radius: 50%; /* Make it circular */
-    border: 2px solid #000;
-    object-fit: cover; /* Ensure proper fit */
-  }
-  
-  /* Caption */
-  .caption {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    color: #666; /* Subtle gray for the caption */
-  }
-  
-  /* Social Links */
-  .sidebar .social-links {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center; /* Center align icons */
-    gap: 0.8rem; /* Add spacing between icons */
-  }
-  
-  .sidebar .social-links a img {
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-  }
-  
-  /* Main Content */
-  .main-content {
-    flex: 2;
-    background-color: #e5e5e5; /* Match main content background */
-  }
-  /* General Styles */
-.app-container {
-    display: flex;
-    min-height: 100vh;
-    background-color: #e5e5e5; /* Light gray background for the app */
-    color: rgb(42, 42, 42);
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Sidebar Styles */
-  .sidebar {
-    flex: 1;
-    padding: 2rem;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center-align content */
-    text-align: center;  /* Center-align text */
-    border-right: 2px solid #ddd; /* Divider between sidebar and main content */
-  }
-  
-  .sidebar h1 {
-    font-size: 2rem; /* Adjust font size */
-    font-weight: bold;
-    margin-bottom: 0.5rem; /* Add spacing below */
-  }
-  
-  .sidebar h2 {
-    font-size: 1rem;
-    color: #888; /* Lighter gray for secondary text */
-    margin-bottom: 1.5rem;
-  }
-  
-  .sidebar p {
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.5; /* Improve text readability */
-  }
-  
-  .sidebar strong {
     color: #000;
-  }
-  
-  .sidebar .adaptive {
-    color: #007bff; /* Bright blue for 'adaptive' */
-  }
-  
-  .sidebar .intuitive {
-    color: #e63946; /* Red for 'intuitive' */
-  }
-  
-  /* Navigation Styles */
-  .sidebar nav ul {
-    list-style: disc; /* Use bullet points */
-    padding-left: 1.5rem; /* Add indentation */
-    text-align: left; /* Align bullets to the left */
-  }
-  
-  .sidebar nav ul li {
-    margin: 0.5rem 0;
-  }
-  
-  .sidebar nav ul li a {
-    text-decoration: none;
-    color: #000; /* Black for links */
     font-weight: bold;
-    font-size: 0.95rem; /* Slightly larger font */
+    font-size: 0.95rem;
   }
   
   /* Profile Picture */
   .sideImage {
     margin-top: 1rem;
-    width: 120px; /* Reduce size to match reference */
+    width: 120px;
     height: 120px;
-    border-radius: 50%; /* Make it circular */
+    border-radius: 50%;
     border: 2px solid #000;
-    object-fit: cover; /* Ensure proper fit */
+    object-fit: cover;
   }
   
   /* Caption */
   .caption {
     margin-top: 1rem;
     font-size: 0.9rem;
-    color: #666; /* Subtle gray for the caption */
+    color: #666;
+    text-align: center; /* Center-align caption */
   }
   
   /* Social Links */
   .sidebar .social-links {
     margin-top: 1rem;
     display: flex;
-    justify-content: center; /* Center align icons */
-    gap: 1rem; /* Add spacing between icons */
+    justify-content: flex-start; /* Align to the left */
+    gap: 1rem;
   }
   
   .sidebar .social-links a img {
     width: 24px;
     height: 24px;
     display: inline-block;
-    filter: grayscale(100%); /* Optional: Apply grayscale filter */
-    transition: filter 0.3s; /* Smooth hover effect */
+    filter: grayscale(100%);
+    transition: filter 0.3s;
   }
   
   .sidebar .social-links a img:hover {
-    filter: none; /* Remove grayscale on hover */
+    filter: none;
   }
   
   /* Main Content */
   .main-content {
     flex: 2;
-    background-color: #e5e5e5; /* Match main content background */
+    background-color: #e5e5e5;
   }
   
