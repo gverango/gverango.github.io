@@ -47,6 +47,7 @@
     color: #888; /* Subtle gray color for subheading */
     margin-bottom: 1.5rem;
     color: #000;
+    font-family: Inter;
     font-size: 15px;
     font-style: italic;
     font-weight: 600;
@@ -128,36 +129,34 @@
   .sidebar .social-links a img:hover {
     transform: scale(1.1); /* Slight zoom on hover */
   }
- /* Profile Section Styling */
+  /* Profile Section Styling */
 .profile-section {
-    display: flex; /* Flexbox for alignment */
-    align-items: center; /* Center image and text vertically */
-    gap: 1rem; /* Space between the image and text */
-    margin-bottom: 1rem; /* Spacing below profile section */
+    display: flex; /* Flexbox to place items side-by-side */
+    align-items: center; /* Vertically center align image and text */
+    gap: 1rem; /* Space between image and text */
+    margin-bottom: 1.5rem; /* Add spacing below the profile section */
   }
   
   .sideImage {
     width: 100px; /* Set fixed width */
     height: 100px; /* Set fixed height */
     border-radius: 20px; /* Rounded corners */
-    border: 2px solid #000; /* Add border */
+    border: 2px solid #000; /* Add border to image */
     object-fit: cover; /* Maintain aspect ratio */
   }
   
   .caption {
     font-size: 1rem;
     color: #666; /* Subtle gray for the caption */
-    font-style: italic; /* Italicize text */
-    margin: 0; /* Remove extra margins */
+    font-style: italic; /* Add italics for style */
+    margin: 0; /* Remove default margin */
   }
   
   /* Social Links Styling */
   .social-links {
-    display: flex; /* Flexbox for horizontal alignment */
-    justify-content: flex-start; /* Align to the left */
-    align-items: center; /* Center-align icons vertically */
-    gap: 1rem; /* Space between icons */
-    margin-top: 0.5rem; /* Adjust space above the icons */
+    display: flex;
+    justify-content: center; /* Horizontally align icons */
+    gap: 1rem; /* Add spacing between icons */
   }
   
   .social-links a img {
@@ -184,4 +183,4 @@
     -webkit-align-content: flex-start;
     -ms-flex-line-pack: start;
     align-content: flex-start;
-}
+} 
