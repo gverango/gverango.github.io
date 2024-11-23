@@ -14,16 +14,16 @@ body {
   .sidebar {
     flex: 1;
     padding: 2rem;
-    background-color: #ffffff;
+    background-color: #ffffff; /* White background */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+    justify-content: space-between; /* Evenly distribute space between elements */
+    align-items: flex-start; /* Align content to the left */
+    text-align: left; /* Left-align text */
     border-right: 2px solid #ddd;
-    height: 100vh;
-    box-sizing: border-box;
-    overflow-y: auto;
-    font-family: inherit; /* Ensure it uses the same font-family */
+    height: 100vh; /* Match sidebar height to screen height */
+    box-sizing: border-box; /* Include padding in the height */
+    overflow-y: auto; /* Allow scrolling if content overflows */
   }
   
   .sidebar h1, .sidebar h2, .sidebar p {
