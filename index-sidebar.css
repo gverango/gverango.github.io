@@ -94,7 +94,7 @@
     width: 100px; /* Set fixed width */
     height: 100px; /* Set fixed height */
     border-radius: 50px; /* Rounded corners */
-    border: 2px solid #000; /* Add border */
+    border: 2px solid var(--accent-color); /* Add border */
     object-fit: cover; /* Maintain aspect ratio */
   }
   
@@ -113,12 +113,12 @@
     gap: 1rem; /* Space between icons */
     margin-top: 0.5rem; /* Adjust space above the icons */
   }
-  
+
   .social-links a img {
     width: 28px; /* Icon size */
     height: 28px;
     transition: transform 0.2s; /* Smooth hover effect */
-    color: var(--accent-color);
+    color: var(--text-color);
   }
   
   .social-links a img:hover {
@@ -138,8 +138,4 @@
     gap: 1rem;
   }
   
-  .social-links img {
-    width: 28px;
-    height: 28px;
-  }
   
