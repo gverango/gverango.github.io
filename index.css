@@ -28,8 +28,8 @@ header p {
 }
 
 .avatar { /* avatar sprite is blurry if less than 50%*/
-  width: 50%;
-  height: 50%;
+  width: auto;
+  height: 100%;
   max-width: auto;
   margin: 2% 0;
 }
